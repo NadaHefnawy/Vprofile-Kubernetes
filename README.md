@@ -3,10 +3,15 @@ In this project, I deployed a multi-tier web application called V Profile onto a
 
 # Key Steps:
 -Kubernetes Cluster Setup: I used Kops to set up a production-grade Kubernetes cluster.
+
 -Containerized Application: The V Profile application, which includes components like MySQL, was containerized and is now ready for deployment.
+
 -Persistent Storage: I created an EBS volume for MySQL to ensure data persistence and configured Kubernetes to manage this storage.
+
 -Node Labeling: Nodes in the cluster were labeled based on availability zones to ensure that the database pod runs in the correct zone.
+
 -Kubernetes Definition Files: I wrote Kubernetes YAML files to define and deploy the necessary resources, including deployments, services, secrets, and volumes.
+
 This project showcases the process of taking a containerized application and running it in a production environment using Kubernetes, ensuring it meets the requirements for high availability, fault tolerance, and scalability.
 # Prerequisites
 #####
